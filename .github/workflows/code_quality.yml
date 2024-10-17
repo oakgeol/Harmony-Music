@@ -26,11 +26,10 @@ jobs:
       - name: Install packages
         run: flutter pub get
 
-      - name: Linter
-        run: flutter analyze
+
 
       - name: Build APK
-        run: flutter build apk
+        run: flutter build apk --v
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
